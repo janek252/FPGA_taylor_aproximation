@@ -1,15 +1,18 @@
-module taylor_rtl(
-  input clock, reset, start,
-  input [11:0] x_in,
-  output reg ready_out,
-  output reg [11:0] sin_out
-);
+module taylor_rtl(clock, reset, start_in, x_in, ready_out, sin_out);
+
+// IN/OUT declaration
+input clock, reset;
+input start_in;
+input [W-1:0] x_in;
+output reg ready_out;
+output reg [W-1:0] sin_out;
+
 parameter integer W = 12; // Fixed-point representation precision
 parameter FXP_MUL = 1024;
 parameter FXP_SHIFT = 10;
 
-// FSMD states
-parameter S1 = 4'h01, S2 = 4'h02, S3 = 4'h03, S4 = 4'h04;
+// FSMD states S1-S8
+parameter S1 = 4'h01, S2 = 4'h02, S3 = 4'h03, S4 = 4'h04;, S5 = 5'h05,  S6 = 4'h06, S7 = 4'h07, S8 = 4'h08,
 
 // Taylor series coefficients (factorial inverses)
 reg signed [11:0] factorial_inv[0:4] = {12'b000000010000, 12'b000000000001, 12'b000000000000, 12'b000000000000, 12'b000000000000};

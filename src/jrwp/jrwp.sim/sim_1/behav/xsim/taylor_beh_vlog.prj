@@ -1,7 +1,6 @@
 # compile verilog/system verilog design source files
 sv xil_defaultlib  \
 "../../../../jrwp.srcs/sim_1/new/cordic_beh2.v" \
-"../../../../jrwp.srcs/sim_1/new/cordic_rtl.v" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"

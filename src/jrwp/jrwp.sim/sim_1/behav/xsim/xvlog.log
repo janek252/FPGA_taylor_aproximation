@@ -1,4 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Public/Documents/JR_PROJECT/FPGA_taylor_aproximation/src/jrwp/jrwp.srcs/sim_1/new/cordic_beh2.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module cordic_beh
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Public/Documents/JR_PROJECT/FPGA_taylor_aproximation/src/jrwp/jrwp.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
