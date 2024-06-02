@@ -2,12 +2,12 @@ module taylor_sine(
     input clock,
     input reset,
     input start_in,
-    input signed [15:0] x_in, // input angle
+    input signed [11:0] x_in, // input angle
     output reg ready_out, // result is ready
-    output reg signed [15:0] sin_out // output sine value
+    output reg signed [11:0] sin_out // output sine value
 );
 
-parameter FXP_SCALE = 4096; //scale
+parameter FXP_SCALE = 1024; //scale
 parameter integer W = 12;
 
 // FSMD states
@@ -17,19 +17,16 @@ parameter S1 = 4'h1, S2 = 4'h2, S3 = 4'h3, S4 = 4'h4, S5 = 4'h5,
 reg [3:0] state;
 
 // Algorithm Variables
-reg signed [15:0] sin;
-reg signed [15:0] x_base, n_x_2, x_tmp;
+reg signed [11:0] sin;
+reg signed [11:0] x_base, n_x_2, x_tmp;
 reg [2:0] i;
-reg signed [15:0] i_table [0:4];
+reg signed [11:0] i_table [0:4] = 
+{   12'b000010101010 * FXP_SCALE,
+    12'b000000110011 * FXP_SCALE,
+    12'b000000011000 * FXP_SCALE,
+    12'b000000001110 * FXP_SCALE,
+    12'b000000001001 * FXP_SCALE};
 
-// Table initialization
-initial begin
-    i_table[0] = 1717986918; // 1/6 in fixed point
-    i_table[1] = 858993459;  // 1/20 in fixed point
-    i_table[2] = 408021893;  // 1/42 in fixed point
-    i_table[3] = 238609294;  // 1/72 in fixed point
-    i_table[4] = 155791677;  // 1/110 in fixed point
-end
 
 always @(posedge clock) begin
     if (reset == 1'b1) begin
@@ -72,7 +69,7 @@ always @(posedge clock) begin
                 state <= S5;
             end
             S7: begin
-                sin_out <= sin;
+                sin_out <= sin/FXP_SCALE;
                 ready_out <= 1;
                 state <= S8;
             end
