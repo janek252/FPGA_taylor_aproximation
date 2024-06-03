@@ -23,7 +23,7 @@ reg signed [W-1:0] x_base, n_x_2, x_tmp;
 reg signed [2*W-1:0] n_x_2_mul, x_tmp_mul;
 reg [2:0] i;
 
-reg signed [W-1:0] i_table [0:4] = 
+reg signed [2*W-1:0] i_table [0:4];
 
 initial begin
     i_table[0] = 12'b000010101010 * FXP_SCALE;
