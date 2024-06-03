@@ -8,6 +8,7 @@ module taylor_sine(
 );
 
 parameter FXP_SCALE = 1024; //scale
+parameter FXP_SHIFT = 10; //param for shifting
 parameter integer W = 12;
 
 // FSMD states
@@ -19,15 +20,18 @@ reg [3:0] state;
 // Algorithm Variables
 reg signed [W-1:0] sin;
 reg signed [W-1:0] x_base, n_x_2, x_tmp;
+reg signed [2*W-1:0] n_x_2_mul, x_tmp_mul;
 reg [2:0] i;
+
 reg signed [W-1:0] i_table [0:4] = 
-{   
-    12'b000010101010 * FXP_SCALE,
-    12'b000000110011 * FXP_SCALE,
-    12'b000000011000 * FXP_SCALE,
-    12'b000000001110 * FXP_SCALE,
-    12'b000000001001 * FXP_SCALE
-};
+
+initial begin
+    i_table[0] = 12'b000010101010 * FXP_SCALE;
+    i_table[1] = 12'b000000110011 * FXP_SCALE;
+    i_table[2] = 12'b000000011000 * FXP_SCALE;
+    i_table[3] = 12'b000000001110 * FXP_SCALE;
+    i_table[4] = 12'b000000001001 * FXP_SCALE;
+end
 
 always @(posedge clock) begin
     if (reset == 1'b1) begin
@@ -48,13 +52,17 @@ always @(posedge clock) begin
                 state <= S3;
             end
             S3: begin
-                n_x_2 <= -x_base * x_base;
+                n_x_2_mul <= -x_base * x_base;
+                n_x_2 <= n_x_2_mul >>> FXP_SHIFT;
                 sin <= x_base;
                 state <= S4;
             end
             S4: begin
-                x_tmp <= x_base * x_base;
-                i <= 0;
+                x_tmp_mul <= x_base * n_x_2;
+                x_tmp <= x_tmp_mul >>> FXP_SHIFT;
+                x_tmp_mul <= x_tmp * i_table[0];
+                x_tmp <= x_tmp_mul >>> FXP_SHIFT;
+                i <= 1;
                 state <= S5;
             end
             S5: begin
@@ -64,13 +72,16 @@ always @(posedge clock) begin
                     state <= S7;
             end
             S6: begin
-                sin <= sin + (i_table[i] * x_tmp );
-                x_tmp <= x_tmp * n_x_2;
+                sin <= sin + x_tmp;
+                x_tmp_mul <= x_tmp * n_x_2;
+                x_tmp <= x_tmp_mul >>> FXP_SHIFT;
+                x_tmp_mul <= i_table[i] * x_tmp;
+                x_tmp <= x_tmp_mul >>> FXP_SHIFT;
                 i <= i + 1;
                 state <= S5;
             end
             S7: begin
-                sin_out <= sin/FXP_SCALE;
+                sin_out <= sin;
                 ready_out <= 1;
                 state <= S8;
             end

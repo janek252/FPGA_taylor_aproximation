@@ -27,7 +27,7 @@ always #5 clock = ~clock;
 
 // Variables for test
 reg [11:0] cycle_count;
-real angle_rad, angle_deg, sin_expected, sin_actual;
+real angle_rad, angle_deg, sin_expected, sin_fxp, sin_actual;
 
 initial begin
     // Initialize Inputs
@@ -71,6 +71,7 @@ task test_angle;
         
         // Calculate expected and actual sine values
         sin_expected = $sin(angle_rad);
+        sin_fxp = sin_out;
         sin_actual = sin_out / FXP_SCALE;
         angle_deg = angle_degrees;
         
