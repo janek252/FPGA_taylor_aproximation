@@ -55,7 +55,7 @@ initial begin
 end
 
 task test_angle;
-    input [31:0] angle_degrees;
+    input [11:0] angle_degrees;
     begin
         // Convert degrees to radians in fixed-point representation
         angle_rad = angle_degrees * 3.14159265359 / 180.0;

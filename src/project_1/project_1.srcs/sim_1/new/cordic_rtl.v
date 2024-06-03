@@ -17,10 +17,10 @@ parameter S1 = 4'h1, S2 = 4'h2, S3 = 4'h3, S4 = 4'h4, S5 = 4'h5,
 reg [3:0] state;
 
 // Algorithm Variables
-reg signed [11:0] sin;
-reg signed [11:0] x_base, n_x_2, x_tmp;
+reg signed [W-1:0] sin;
+reg signed [W-1:0] x_base, n_x_2, x_tmp;
 reg [2:0] i;
-reg signed [11:0] i_table [0:4] = 
+reg signed [W-1:0] i_table [0:4] = 
 {   12'b000010101010 * FXP_SCALE,
     12'b000000110011 * FXP_SCALE,
     12'b000000011000 * FXP_SCALE,
