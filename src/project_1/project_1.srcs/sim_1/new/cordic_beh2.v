@@ -42,12 +42,12 @@ initial begin
     reset = 0;
 
     // Test for different angles
+    test_angle(0);
+    test_angle(5);
+    test_angle(10);
+    test_angle(15);
+    test_angle(20);
     test_angle(30);
-    test_angle(45);
-    test_angle(60);
-    test_angle(90);
-    test_angle(120);
-    test_angle(150);
 
     // Finish simulation
     #20;
