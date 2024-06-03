@@ -20,14 +20,24 @@ reg [3:0] state;
 reg signed [W-1:0] sin;
 reg signed [W-1:0] x_base, n_x_2, x_tmp;
 reg [2:0] i;
-reg signed [W-1:0] i_table [0:4] = 
-{   
-    12'b000010101010 * FXP_SCALE,
-    12'b000000110011 * FXP_SCALE,
-    12'b000000011000 * FXP_SCALE,
-    12'b000000001110 * FXP_SCALE,
-    12'b000000001001 * FXP_SCALE
-};
+// reg signed [W-1:0] i_table [0:4] = 
+// {   
+//     12'b000010101010 * FXP_SCALE,
+//     12'b000000110011 * FXP_SCALE,
+//     12'b000000011000 * FXP_SCALE,
+//     12'b000000001110 * FXP_SCALE,
+//     12'b000000001001 * FXP_SCALE
+// };
+
+reg signed [2*W-1:0] i_table [0:4];
+
+initial begin
+    i_table[0] = 12'b000010101010 * FXP_SCALE;
+    i_table[1] = 12'b000000110011 * FXP_SCALE;
+    i_table[2] = 12'b000000011000 * FXP_SCALE;
+    i_table[3] = 12'b000000001110 * FXP_SCALE;
+    i_table[4] = 12'b000000001001 * FXP_SCALE;
+end
 
 always @(posedge clock) begin
     if (reset == 1'b1) begin
