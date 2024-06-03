@@ -26,7 +26,7 @@ taylor_sine uut (
 always #5 clock = ~clock;
 
 // Variables for test
-reg [31:0] cycle_count;
+reg [11:0] cycle_count;
 real angle_rad, angle_deg, sin_expected, sin_actual;
 
 initial begin
