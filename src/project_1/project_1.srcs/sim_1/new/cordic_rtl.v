@@ -23,7 +23,7 @@ reg signed [W-1:0] x_base, n_x_2, x_tmp;
 reg signed [2*W-1:0] n_x_2_mul, x_tmp_mul;
 reg [2:0] i;
 
-reg signed [2*W-1:0] i_table [0:4];
+reg signed [W-1:0] i_table [0:4];
 
 initial begin
     i_table[0] = 12'b000010101010 * FXP_SCALE;
@@ -46,7 +46,9 @@ always @(posedge clock) begin
                     state <= S1;
             end
             S2: begin
-                x_base <= x_in * FXP_SCALE;
+                x_base <= x_in;
+                $display("x_in = %f", x_in);
+                $display("x_base = %d", x_base);
                 sin <= 0;
                 ready_out <= 0;
                 state <= S3;
@@ -73,6 +75,8 @@ always @(posedge clock) begin
             end
             S6: begin
                 sin <= sin + x_tmp;
+                $display("sin = %d", sin);
+                $display("x_tmp = %d", x_tmp);
                 x_tmp_mul <= x_tmp * n_x_2;
                 x_tmp <= x_tmp_mul >>> FXP_SHIFT;
                 x_tmp_mul <= i_table[i] * x_tmp;

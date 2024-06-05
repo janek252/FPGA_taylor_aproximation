@@ -38,7 +38,7 @@ initial begin
     cycle_count = 0;
 
     // Wait for global reset
-    #10;
+    #20;
     reset = 0;
 
     // Test for different angles
@@ -50,7 +50,7 @@ initial begin
     test_angle(30);
 
     // Finish simulation
-    #20;
+    #100;
     
 end
 
@@ -60,7 +60,7 @@ task test_angle;
         // Convert degrees to radians in fixed-point representation
         angle_rad = angle_degrees * 3.14159265359 / 180.0;
         x_in = angle_rad * FXP_SCALE;
-        
+        $display("x_in_beh = %f", x_in);
         // Start the module
         start_in = 1;
         #10;
