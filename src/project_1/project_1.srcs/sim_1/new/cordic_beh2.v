@@ -27,9 +27,8 @@ always #5 clock = ~clock;
 
 // Variables for test
 reg [11:0] cycle_count;
-real angle_rad, angle_deg, sin_expected, sin_fxp, sin_actual;
+real angle_rad, angle_deg, sin_expected, sin_fxp, sin_actual, delta;
 
-always @ (posedge ready_out)
 initial begin
     // Initialize Inputs
     clock = 0;
@@ -37,18 +36,33 @@ initial begin
     start_in = 0;
     x_in = 0;
     cycle_count = 0;
-
-    // Wait for global reset
+    
     #20;
     reset = 0;
 
     // Test for different angles
-    test_angle(0);
-    test_angle(5);
+    test_angle(5);    
+    
+    // Finish simulation
+    #100;  
+end
+
+always @ (posedge ready_out)
+begin
+        // Wait for global reset
+    #20;
+    reset = 0;
+
+    // Test for different angles
+    // test_angle(0);
     test_angle(10);
     test_angle(15);
     test_angle(20);
     test_angle(30);
+    test_angle(45);
+    test_angle(60);
+    test_angle(90);
+    test_angle(135);  
 
     // Finish simulation
     #100;
@@ -74,8 +88,9 @@ task test_angle;
         // Calculate expected and actual sine values
         sin_expected = $sin(angle_rad);
         sin_fxp = sin_out;
-        sin_actual = sin_out / FXP_SCALE;
+        sin_actual = sin_fxp / FXP_SCALE;
         angle_deg = angle_degrees;
+        delta = sin_actual / sin_expected;
         
         // Display the result
         $display("Angle: %f degrees (%f radians), Expected sin: %f, Calculated sin: %f", angle_deg, angle_rad, sin_expected, sin_actual);
