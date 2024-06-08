@@ -25,7 +25,7 @@ reg [2:0] i;
 
 reg signed [W-1:0] i_table [0:4];
 
-initial begin
+initial begin //table to fix, weird values
     i_table[0] = 12'b000010101010 * FXP_SCALE;
     i_table[1] = 12'b000000110011 * FXP_SCALE;
     i_table[2] = 12'b000000011000 * FXP_SCALE;
@@ -46,17 +46,20 @@ always @(posedge clock) begin
                     state <= S1;
             end
             S2: begin
-                x_base <= x_in;
-                $display("x_in = %f", x_in);
-                $display("x_base = %d", x_base);
-                sin <= 0;
                 ready_out <= 0;
+                x_base <= x_in;
+                $display("x_in = %d", x_in);
+                $display("x_base = %d", x_base);
+                sin <= 0;             
                 state <= S3;
             end
             S3: begin
-                n_x_2_mul <= -x_base * x_base;
+                n_x_2_mul <= x_base * x_base;
+                n_x_2_mul <= ~n_x_2_mul;
                 n_x_2 <= n_x_2_mul >>> FXP_SHIFT;
                 sin <= x_base;
+                $display("S3: n_x_2 = %d", n_x_2);
+                $display("S3: sin = %d", sin);
                 state <= S4;
             end
             S4: begin
@@ -75,8 +78,8 @@ always @(posedge clock) begin
             end
             S6: begin
                 sin <= sin + x_tmp;
-                $display("sin = %d", sin);
-                $display("x_tmp = %d", x_tmp);
+                $display("S6: sin = %d", sin);
+                $display("S6: x_tmp = %d", x_tmp);
                 x_tmp_mul <= x_tmp * n_x_2;
                 x_tmp <= x_tmp_mul >>> FXP_SHIFT;
                 x_tmp_mul <= i_table[i] * x_tmp;

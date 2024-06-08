@@ -29,6 +29,7 @@ always #5 clock = ~clock;
 reg [11:0] cycle_count;
 real angle_rad, angle_deg, sin_expected, sin_fxp, sin_actual;
 
+always @ (posedge ready_out)
 initial begin
     // Initialize Inputs
     clock = 0;
@@ -60,7 +61,8 @@ task test_angle;
         // Convert degrees to radians in fixed-point representation
         angle_rad = angle_degrees * 3.14159265359 / 180.0;
         x_in = angle_rad * FXP_SCALE;
-        $display("x_in_beh = %f", x_in);
+        $display("x_in_tb = %d", x_in);
+        #10;
         // Start the module
         start_in = 1;
         #10;
