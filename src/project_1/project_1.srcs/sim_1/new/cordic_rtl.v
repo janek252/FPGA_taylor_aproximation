@@ -52,12 +52,10 @@ always @(posedge clock) begin
             end
             S2: begin
                 x_base <= x_in;
-                $display("x_in = %d", x_in);
                 sin <= 0;             
                 state <= S3;
             end
             S3: begin
-                $display("x_base = %d", x_base);
                 n_x_2_mul <= x_base * x_base;
                 sin <= x_base;
                 state <= S4;
@@ -70,8 +68,7 @@ always @(posedge clock) begin
                 n_x_2 <= n_x_2_mul >>> FXP_SHIFT;
                 state <= S6;
             end
-            S6: begin       
-                $display("S5: n_x_2 = %d", n_x_2);         
+            S6: begin                
                 x_tmp_mul <= x_base * n_x_2;
                 i <= 0;
                 sum_rdy <= 0;
@@ -90,8 +87,6 @@ always @(posedge clock) begin
                 state <= S7;
             end
             S9: begin
-                $display("S10: sin = %d", sin);
-                $display("S10: x_tmp = %d", x_tmp);
                 x_tmp_mul <= x_tmp * n_x_2;
                 state <= S7;
             end
