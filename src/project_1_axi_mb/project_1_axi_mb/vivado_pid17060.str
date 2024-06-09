@@ -104,3 +104,143 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // WARNING: HEventQueue.dispatchEvent() is taking  6136 ms.
 // Project name: project_1_axi_mb; location: C:/Users/Public/Documents/JR_PROJECT/FPGA_taylor_aproximation/src/project_1_axi_mb/project_1_axi_mb; part: xc7z010clg400-1
 // Tcl Message: open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:12 . Memory (MB): peak = 654.660 ; gain = 61.852 
+// [Engine Memory]: 646 MB (+7092kb) [00:00:29]
+dismissDialog("Open Project"); // bx (cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 1); // B (D, cp)
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 3); // B (D, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (Q, cp)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// [Engine Memory]: 686 MB (+7593kb) [00:00:50]
+// F (cp): Settings: addNotify
+// 'dy' command handler elapsed time: 5 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  5203 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 694 MB. GUI used memory: 60 MB. Current time: 6/9/24, 4:10:44 PM CEST
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (Q, cp)
+dismissDialog("Settings"); // F (cp)
+// Elapsed time: 21 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package New IP..."); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// Q (cp): Create and Package New IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1548 ms.
+// Elapsed time: 12 seconds
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+// Elapsed time: 10 seconds
+selectRadioButton(PAResourceItoN.NewIpWizard_CREATE_NEW_AXI4_IP_CREATE_AXI4, "Create a new AXI4 peripheral. Create an AXI4 IP, driver, software test application, IP Integrator AXI4 VIP simulation and debug demonstration design."); // b (a, Q)
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+// Elapsed time: 29 seconds
+setText(PAResourceItoN.NewIpWizard_NAME_MYIP, "taylor_ip"); // Y (Q)
+setText(PAResourceItoN.NewIpWizard_IP_DEFINITION_SOURCE_LOCATION, (String) null); // al (ak, Q)
+typeControlKey(null, null, 'z');
+setText(PAResourceItoN.NewIpWizard_IP_DEFINITION_SOURCE_LOCATION, (String) null); // al (ak, Q)
+selectButton("CANCEL", "Cancel"); // JButton (j, Q)
+// 'q' command handler elapsed time: 60 seconds
+dismissDialog("Create and Package New IP"); // Q (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package New IP..."); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// Q (cp): Create and Package New IP: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+selectRadioButton(PAResourceItoN.NewIpWizard_CREATE_NEW_AXI4_IP_CREATE_AXI4, "Create a new AXI4 peripheral. Create an AXI4 IP, driver, software test application, IP Integrator AXI4 VIP simulation and debug demonstration design."); // b (a, Q)
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+setText(PAResourceItoN.NewIpWizard_NAME_MYIP, "taylor_ip"); // Y (Q)
+// [GUI Memory]: 119 MB (+18251kb) [00:02:41]
+setText(PAResourceItoN.NewIpWizard_IP_DEFINITION_SOURCE_LOCATION, "C:/Users/Public/Documents/JR_PROJECT/FPGA_taylor_aproximation/src/project_1_axi_mb/project_1_axi_mb/../ip_repo"); // al (ak, Q)
+// Elapsed time: 16 seconds
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+// Elapsed time: 15 seconds
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+selectRadioButton(PAResourceItoN.NewIpWizard_EDIT_IP, "Edit IP"); // a (Q)
+// Elapsed time: 20 seconds
+selectButton("FINISH", "Finish"); // JButton (j, Q)
+// 'q' command handler elapsed time: 74 seconds
+dismissDialog("Create and Package New IP"); // Q (cp)
+// TclEventType: LOAD_FEATURE
+// Tcl Message: create_peripheral xilinx.com user taylor_ip 1.0 -dir C:/Users/Public/Documents/JR_PROJECT/FPGA_taylor_aproximation/src/project_1_axi_mb/project_1_axi_mb/../ip_repo 
+// Tcl Message: add_peripheral_interface S00_AXI -interface_mode slave -axi_type lite [ipx::find_open_core xilinx.com:user:taylor_ip:1.0] 
+// TclEventType: PACKAGER_OBJECT_ADD
+// bx (cp):  Create Peripheral IP : addNotify
+// Tcl Message: generate_peripheral -driver -bfm_example_design -debug_hw_example_design [ipx::find_open_core xilinx.com:user:taylor_ip:1.0] 
+// Tcl Message: write_peripheral [ipx::find_open_core xilinx.com:user:taylor_ip:1.0] 
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  C:/Users/Public/Documents/JR_PROJECT/FPGA_taylor_aproximation/src/project_1_axi_mb/project_1_axi_mb/../ip_repo/taylor_ip_1.0 [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Public/Documents/JR_PROJECT/FPGA_taylor_aproximation/src/project_1_axi_mb/ip_repo/taylor_ip_1.0'. 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name edit_taylor_ip_v1_0 -directory C:/Users/Public/Documents/JR_PROJECT/FPGA_taylor_aproximation/src/project_1_axi_mb/project_1_axi_mb/../ip_repo c:/Users/Public/Documents/JR_PROJECT/FPGA_taylor_aproximation/src/project_1_axi_mb/ip_repo/taylor_ip_1.0/component.xml 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'c:/users/public/documents/jr_project/fpga_taylor_aproximation/src/project_1_axi_mb/ip_repo' 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 752 MB (+33805kb) [00:03:51]
+// WARNING: HEventQueue.dispatchEvent() is taking  6494 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 752 MB. GUI used memory: 69 MB. Current time: 6/9/24, 4:13:46 PM CEST
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:14 . Memory (MB): peak = 756.055 ; gain = 42.199 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Public/Documents/JR_PROJECT/FPGA_taylor_aproximation/src/project_1_axi_mb/ip_repo/taylor_ip_1.0'. INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// TclEventType: LOAD_FEATURE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// WARNING: HEventQueue.dispatchEvent() is taking  2745 ms.
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::edit_ip_in_project: Time (s): cpu = 00:00:35 ; elapsed = 00:00:18 . Memory (MB): peak = 762.973 ; gain = 49.117 
+// Elapsed time: 20 seconds
+dismissDialog("Create Peripheral IP"); // bx (cp)
+// [GUI Memory]: 133 MB (+8712kb) [00:04:08]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 33 seconds
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Ports and Interfaces", 4); // ar (Q, cp)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Identification", 0); // ar (Q, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP-XACT]", 2); // B (D, cp)
+// Elapsed time: 278 seconds
+closeMainWindow("edit_taylor_ip_v1_0 - [c:/users/public/documents/jr_project/fpga_taylor_aproximation/src/project_1_axi_mb/ip_repo/edit_taylor_ip_v1_0.xpr] - Vivado 2018.3"); // cp
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// A (cp): Close Project: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Close Project : addNotify
+// TclEventType: PROJECT_CLOSE
+dismissDialog("Close Project"); // A (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 770 MB. GUI used memory: 73 MB. Current time: 6/9/24, 4:19:31 PM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  1475 ms.
+// Tcl Message: close_project 
+dismissDialog("Close Project"); // bx (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 770 MB. GUI used memory: 71 MB. Current time: 6/9/24, 4:49:34 PM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  1061 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6091080 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 770 MB. GUI used memory: 63 MB. Current time: 6/9/24, 6:52:59 PM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  3359 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1423 ms.

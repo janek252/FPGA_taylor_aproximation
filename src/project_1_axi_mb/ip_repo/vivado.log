@@ -21,3 +21,7 @@ INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Public/Documents/JR_PROJECT/FPGA_taylor_aproximation/src/project_1_axi_mb/ip_repo/taylor_ip_1.0'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
 open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 654.992 ; gain = 68.211
+update_compile_order -fileset sources_1
+close [ open C:/Users/Public/Documents/JR_PROJECT/FPGA_taylor_aproximation/src/project_1_axi_mb/ip_repo/taylor_ip_1.0/hdl/taylor_rtl.v w ]
+add_files C:/Users/Public/Documents/JR_PROJECT/FPGA_taylor_aproximation/src/project_1_axi_mb/ip_repo/taylor_ip_1.0/hdl/taylor_rtl.v
+update_compile_order -fileset sources_1

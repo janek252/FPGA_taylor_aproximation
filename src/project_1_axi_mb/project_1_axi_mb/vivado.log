@@ -42,3 +42,4 @@ WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Ver
 WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/Public/Documents/JR_PROJECT/FPGA_taylor_aproximation/src/project_1_axi_mb/ip_repo/taylor_ip_1.0/hdl/taylor_ip_v1_0.v:]
 ipx::edit_ip_in_project: Time (s): cpu = 00:00:35 ; elapsed = 00:00:18 . Memory (MB): peak = 762.973 ; gain = 49.117
 update_compile_order -fileset sources_1
+close_project

@@ -20,3 +20,4 @@ set_property  ip_repo_paths  C:/Users/Public/Documents/JR_PROJECT/FPGA_taylor_ap
 update_ip_catalog -rebuild
 ipx::edit_ip_in_project -upgrade true -name edit_taylor_ip_v1_0 -directory C:/Users/Public/Documents/JR_PROJECT/FPGA_taylor_aproximation/src/project_1_axi_mb/project_1_axi_mb/../ip_repo c:/Users/Public/Documents/JR_PROJECT/FPGA_taylor_aproximation/src/project_1_axi_mb/ip_repo/taylor_ip_1.0/component.xml
 update_compile_order -fileset sources_1
+close_project

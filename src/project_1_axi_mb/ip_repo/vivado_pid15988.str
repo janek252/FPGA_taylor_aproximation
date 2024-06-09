@@ -102,3 +102,75 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // [Engine Memory]: 606 MB (+484317kb) [00:00:26]
 // [GUI Memory]: 96 MB (+9263kb) [00:00:26]
 // WARNING: HEventQueue.dispatchEvent() is taking  5193 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 654.992 ; gain = 68.211 
+// Project name: edit_taylor_ip_v1_0; location: C:/Users/Public/Documents/JR_PROJECT/FPGA_taylor_aproximation/src/project_1_axi_mb/ip_repo; part: xc7z010clg400-1
+dismissDialog("Open Project"); // bx (cp)
+// [Engine Memory]: 644 MB (+7690kb) [00:00:32]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 26 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4); // B (D, cp)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+// Elapsed time: 14 seconds
+selectButton("NEXT", "Next >"); // JButton (j, c)
+// Elapsed time: 13 seconds
+selectCheckBox(PAResourceQtoS.SrcChooserPanel_ADD_SOURCES_FROM_SUBDIRECTORIES, "Add sources from subdirectories", false); // g (bm, c): FALSE
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 46 MB. Current time: 6/9/24, 4:20:51 PM CEST
+// Elapsed time: 28 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "taylor_rtl"); // Y (Q, F)
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 210ms to process. Increasing delay to 2000 ms.
+// [GUI Memory]: 106 MB (+5311kb) [00:07:15]
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 46 MB. Current time: 6/9/24, 4:50:53 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 42 MB. Current time: 6/9/24, 6:52:57 PM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  1675 ms.
+// Elapsed time: 9647 seconds
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_LOCATION, "Choose Location...", 1); // e (Q, F)
+// Elapsed time: 37 seconds
+dismissFolderChooser();
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_LOCATION, "Choose Location...", 1); // e (Q, F)
+// Elapsed time: 44 seconds
+setFolderChooser("C:/Users/Public/Documents/JR_PROJECT/FPGA_taylor_aproximation/src/project_1_axi_mb/ip_repo/taylor_ip_1.0/hdl");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectCheckBox(PAResourceQtoS.SrcChooserPanel_ADD_SOURCES_FROM_SUBDIRECTORIES, "Add sources from subdirectories", false); // g (bm, c): FALSE
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 9803 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: close [ open C:/Users/Public/Documents/JR_PROJECT/FPGA_taylor_aproximation/src/project_1_axi_mb/ip_repo/taylor_ip_1.0/hdl/taylor_rtl.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/Public/Documents/JR_PROJECT/FPGA_taylor_aproximation/src/project_1_axi_mb/ip_repo/taylor_ip_1.0/hdl/taylor_rtl.v 
+// I (cp): Define Module: addNotify
+// Elapsed time: 28 seconds
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; input ; false ; 0 ; 0", 2, "input", 1); // ab (Q, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "input", 2, "Direction", 1); // ab (Q, I)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; input ; false ; 0 ; 0", 0, "input", 1); // ab (Q, I)
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // B (f, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "input", 0, "Direction", 1); // ab (Q, I)
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // B (f, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; input ; false ; 0 ; 0", 2, "input", 1); // ab (Q, I)
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // B (f, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "input", 2, "Direction", 1); // ab (Q, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; input ; false ; 0 ; 0", 1, "input", 1); // ab (Q, I)
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // B (f, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "input", 1, "Direction", 1); // ab (Q, I)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (taylor_rtl.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, taylor_rtl (taylor_rtl.v)]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, taylor_rtl (taylor_rtl.v)]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, taylor_rtl (taylor_rtl.v)]", 9, false, false, false, false, false, true); // B (D, cp) - Double Click
