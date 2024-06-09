@@ -174,3 +174,36 @@ dismissDialog("Define Module"); // I (cp)
 selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, taylor_rtl (taylor_rtl.v)]", 9, false); // B (D, cp)
 selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, taylor_rtl (taylor_rtl.v)]", 9, false); // B (D, cp)
 selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, taylor_rtl (taylor_rtl.v)]", 9, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 113 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, taylor_ip_v1_0 (taylor_ip_v1_0.v)]", 7, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, taylor_ip_v1_0 (taylor_ip_v1_0.v)]", 7, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, taylor_ip_v1_0 (taylor_ip_v1_0.v), taylor_ip_v1_0_S00_AXI_inst : taylor_ip_v1_0_S00_AXI (taylor_ip_v1_0_S00_AXI.v)]", 8, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, taylor_ip_v1_0 (taylor_ip_v1_0.v), taylor_ip_v1_0_S00_AXI_inst : taylor_ip_v1_0_S00_AXI (taylor_ip_v1_0_S00_AXI.v)]", 8, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, taylor_ip_v1_0 (taylor_ip_v1_0.v), taylor_ip_v1_0_S00_AXI_inst : taylor_ip_v1_0_S00_AXI (taylor_ip_v1_0_S00_AXI.v)]", 8, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("taylor_ip_v1_0_S00_AXI.v", 180, 145); // cl (w, cp)
+// Elapsed time: 30 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, taylor_rtl (taylor_rtl.v)]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, taylor_rtl (taylor_rtl.v)]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, taylor_rtl (taylor_rtl.v)]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("taylor_rtl.v", 122, 124); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, taylor_ip_v1_0 (taylor_ip_v1_0.v)]", 1, true); // B (D, cp) - Node
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "taylor_rtl.v", 1); // k (j, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, taylor_rtl (taylor_rtl.v)]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, taylor_rtl (taylor_rtl.v)]", 9, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("taylor_rtl.v", 154, 306); // cl (w, cp)
+selectCodeEditor("taylor_rtl.v", 128, 244); // cl (w, cp)
+selectCodeEditor("taylor_rtl.v", 98, 303); // cl (w, cp)
+typeControlKey((HResource) null, "taylor_rtl.v", 'v'); // cl (w, cp)
+// Elapsed time: 20 seconds
+selectCodeEditor("taylor_rtl.v", 198, 182); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("taylor_rtl.v", 77, 169); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, taylor_ip_v1_0 (taylor_ip_v1_0.v), taylor_ip_v1_0_S00_AXI_inst : taylor_ip_v1_0_S00_AXI (taylor_ip_v1_0_S00_AXI.v)]", 8, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, taylor_ip_v1_0 (taylor_ip_v1_0.v), taylor_ip_v1_0_S00_AXI_inst : taylor_ip_v1_0_S00_AXI (taylor_ip_v1_0_S00_AXI.v)]", 8, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 42 seconds
+selectCodeEditor("taylor_ip_v1_0_S00_AXI.v", 156, 234); // cl (w, cp)

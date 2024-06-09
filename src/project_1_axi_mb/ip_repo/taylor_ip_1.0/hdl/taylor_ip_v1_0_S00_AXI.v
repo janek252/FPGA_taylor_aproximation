@@ -397,8 +397,31 @@
 	    end
 	end    
 
-	// Add user logic here
-
+	// Add user logic here //to modify
+//Reset signal for cordic processor
+wire ARESET;
+assign ARESET = ~S_AXI_ARESETN;
+//Transfer output from cordic processor to output registers
+wire [C_S_AXI_DATA_WIDTH-1:0] slv_wire2;
+wire [C_S_AXI_DATA_WIDTH-1:0] slv_wire3;
+always @( posedge S_AXI_ACLK )
+begin
+ slv_reg2 <= slv_wire2;
+ slv_reg3 <= slv_wire3;
+end
+//Assign zeros to unused bits
+assign slv_wire2[31:1] = 31'b0;
+ assign slv_wire3[31:12] = 20'b0;
+// assign slv_wire3[31:28] = 4'b0;
+cordic_rtl cordic_rtl_inst( S_AXI_ACLK, //clock,
+ ARESET, //reset,
+slv_reg0[0], //start
+slv_reg1, //angle_in
+slv_wire2[0], //ready_out,
+slv_wire3[11:0],//sin_out,
+//slv_wire3[27:16]//cos_out
+);
+// User logic end
 	// User logic ends
 
 	endmodule

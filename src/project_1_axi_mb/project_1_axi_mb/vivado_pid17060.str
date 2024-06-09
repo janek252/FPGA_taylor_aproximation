@@ -244,3 +244,10 @@ dismissDialog("Close Project"); // bx (cp)
 // HMemoryUtils.trashcanNow. Engine heap size: 770 MB. GUI used memory: 63 MB. Current time: 6/9/24, 6:52:59 PM CEST
 // WARNING: HEventQueue.dispatchEvent() is taking  3359 ms.
 // WARNING: HEventQueue.dispatchEvent() is taking  1423 ms.
+// PAPropertyPanels.initPanels (cordic_beh2.v) elapsed time: 0.3s
+// Elapsed time: 10044 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, taylor_sine_beh (cordic_beh2.v)]", 5, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, taylor_sine_beh (cordic_beh2.v), uut : taylor_sine (cordic_rtl.v)]", 6, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, taylor_sine_beh (cordic_beh2.v), uut : taylor_sine (cordic_rtl.v)]", 6, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("cordic_rtl.v", 180, 73); // cl (w, cp)
+typeControlKey((HResource) null, "cordic_rtl.v", 'c'); // cl (w, cp)
