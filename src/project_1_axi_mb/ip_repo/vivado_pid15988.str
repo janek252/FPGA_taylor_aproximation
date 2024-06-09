@@ -1,0 +1,209 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 15988
+License: Customer
+
+Current time: 	Sun Jun 09 16:19:08 CEST 2024
+Time zone: 	Central European Standard Time (Europe/Belgrade)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 23 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Janek
+User home directory: C:/Users/Janek
+User working directory: C:/Users/Public/Documents/JR_PROJECT/FPGA_taylor_aproximation/src/project_1_axi_mb/ip_repo
+User country: 	PL
+User language: 	pl
+User locale: 	pl_PL
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.3
+RDI_DATADIR: C:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/Janek/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/Janek/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/Janek/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Public/Documents/JR_PROJECT/FPGA_taylor_aproximation/src/project_1_axi_mb/ip_repo/vivado.log
+Vivado journal file location: 	C:/Users/Public/Documents/JR_PROJECT/FPGA_taylor_aproximation/src/project_1_axi_mb/ip_repo/vivado.jou
+Engine tmp dir: 	C:/Users/Public/Documents/JR_PROJECT/FPGA_taylor_aproximation/src/project_1_axi_mb/ip_repo/.Xil/Vivado-15988-DESKTOP-Q3COFMR
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.3
+XILINX_SDK: C:/Xilinx/SDK/2018.3
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 558 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Public\Documents\JR_PROJECT\FPGA_taylor_aproximation\src\project_1_axi_mb\ip_repo\edit_taylor_ip_v1_0.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/Public/Documents/JR_PROJECT/FPGA_taylor_aproximation/src/project_1_axi_mb/ip_repo/edit_taylor_ip_v1_0.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/Public/Documents/JR_PROJECT/FPGA_taylor_aproximation/src/project_1_axi_mb/ip_repo' 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/Public/Documents/JR_PROJECT/FPGA_taylor_aproximation/src/project_1_axi_mb/ip_repo/edit_taylor_ip_v1_0.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/Public/Documents/JR_PROJECT/FPGA_taylor_aproximation/src/project_1_axi_mb/ip_repo' 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Public/Documents/JR_PROJECT/FPGA_taylor_aproximation/src/project_1_axi_mb/ip_repo/taylor_ip_1.0'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 577 MB. GUI used memory: 41 MB. Current time: 6/9/24, 4:19:10 PM CEST
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 83 MB (+84350kb) [00:00:26]
+// [Engine Memory]: 606 MB (+484317kb) [00:00:26]
+// [GUI Memory]: 96 MB (+9263kb) [00:00:26]
+// WARNING: HEventQueue.dispatchEvent() is taking  5193 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 654.992 ; gain = 68.211 
+// Project name: edit_taylor_ip_v1_0; location: C:/Users/Public/Documents/JR_PROJECT/FPGA_taylor_aproximation/src/project_1_axi_mb/ip_repo; part: xc7z010clg400-1
+dismissDialog("Open Project"); // bx (cp)
+// [Engine Memory]: 644 MB (+7690kb) [00:00:32]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 26 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4); // B (D, cp)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+// Elapsed time: 14 seconds
+selectButton("NEXT", "Next >"); // JButton (j, c)
+// Elapsed time: 13 seconds
+selectCheckBox(PAResourceQtoS.SrcChooserPanel_ADD_SOURCES_FROM_SUBDIRECTORIES, "Add sources from subdirectories", false); // g (bm, c): FALSE
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 46 MB. Current time: 6/9/24, 4:20:51 PM CEST
+// Elapsed time: 28 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "taylor_rtl"); // Y (Q, F)
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 210ms to process. Increasing delay to 2000 ms.
+// [GUI Memory]: 106 MB (+5311kb) [00:07:15]
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 46 MB. Current time: 6/9/24, 4:50:53 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 42 MB. Current time: 6/9/24, 6:52:57 PM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  1675 ms.
+// Elapsed time: 9647 seconds
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_LOCATION, "Choose Location...", 1); // e (Q, F)
+// Elapsed time: 37 seconds
+dismissFolderChooser();
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_LOCATION, "Choose Location...", 1); // e (Q, F)
+// Elapsed time: 44 seconds
+setFolderChooser("C:/Users/Public/Documents/JR_PROJECT/FPGA_taylor_aproximation/src/project_1_axi_mb/ip_repo/taylor_ip_1.0/hdl");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectCheckBox(PAResourceQtoS.SrcChooserPanel_ADD_SOURCES_FROM_SUBDIRECTORIES, "Add sources from subdirectories", false); // g (bm, c): FALSE
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 9803 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: close [ open C:/Users/Public/Documents/JR_PROJECT/FPGA_taylor_aproximation/src/project_1_axi_mb/ip_repo/taylor_ip_1.0/hdl/taylor_rtl.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/Public/Documents/JR_PROJECT/FPGA_taylor_aproximation/src/project_1_axi_mb/ip_repo/taylor_ip_1.0/hdl/taylor_rtl.v 
+// I (cp): Define Module: addNotify
+// Elapsed time: 28 seconds
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; input ; false ; 0 ; 0", 2, "input", 1); // ab (Q, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "input", 2, "Direction", 1); // ab (Q, I)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; input ; false ; 0 ; 0", 0, "input", 1); // ab (Q, I)
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // B (f, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "input", 0, "Direction", 1); // ab (Q, I)
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // B (f, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; input ; false ; 0 ; 0", 2, "input", 1); // ab (Q, I)
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // B (f, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "input", 2, "Direction", 1); // ab (Q, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; input ; false ; 0 ; 0", 1, "input", 1); // ab (Q, I)
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // B (f, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "input", 1, "Direction", 1); // ab (Q, I)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (taylor_rtl.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, taylor_rtl (taylor_rtl.v)]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, taylor_rtl (taylor_rtl.v)]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, taylor_rtl (taylor_rtl.v)]", 9, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 113 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, taylor_ip_v1_0 (taylor_ip_v1_0.v)]", 7, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, taylor_ip_v1_0 (taylor_ip_v1_0.v)]", 7, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, taylor_ip_v1_0 (taylor_ip_v1_0.v), taylor_ip_v1_0_S00_AXI_inst : taylor_ip_v1_0_S00_AXI (taylor_ip_v1_0_S00_AXI.v)]", 8, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, taylor_ip_v1_0 (taylor_ip_v1_0.v), taylor_ip_v1_0_S00_AXI_inst : taylor_ip_v1_0_S00_AXI (taylor_ip_v1_0_S00_AXI.v)]", 8, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, taylor_ip_v1_0 (taylor_ip_v1_0.v), taylor_ip_v1_0_S00_AXI_inst : taylor_ip_v1_0_S00_AXI (taylor_ip_v1_0_S00_AXI.v)]", 8, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("taylor_ip_v1_0_S00_AXI.v", 180, 145); // cl (w, cp)
+// Elapsed time: 30 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, taylor_rtl (taylor_rtl.v)]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, taylor_rtl (taylor_rtl.v)]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, taylor_rtl (taylor_rtl.v)]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("taylor_rtl.v", 122, 124); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, taylor_ip_v1_0 (taylor_ip_v1_0.v)]", 1, true); // B (D, cp) - Node
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "taylor_rtl.v", 1); // k (j, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, taylor_rtl (taylor_rtl.v)]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, taylor_rtl (taylor_rtl.v)]", 9, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("taylor_rtl.v", 154, 306); // cl (w, cp)
+selectCodeEditor("taylor_rtl.v", 128, 244); // cl (w, cp)
+selectCodeEditor("taylor_rtl.v", 98, 303); // cl (w, cp)
+typeControlKey((HResource) null, "taylor_rtl.v", 'v'); // cl (w, cp)
+// Elapsed time: 20 seconds
+selectCodeEditor("taylor_rtl.v", 198, 182); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("taylor_rtl.v", 77, 169); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, taylor_ip_v1_0 (taylor_ip_v1_0.v), taylor_ip_v1_0_S00_AXI_inst : taylor_ip_v1_0_S00_AXI (taylor_ip_v1_0_S00_AXI.v)]", 8, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, taylor_ip_v1_0 (taylor_ip_v1_0.v), taylor_ip_v1_0_S00_AXI_inst : taylor_ip_v1_0_S00_AXI (taylor_ip_v1_0_S00_AXI.v)]", 8, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 42 seconds
+selectCodeEditor("taylor_ip_v1_0_S00_AXI.v", 156, 234); // cl (w, cp)
