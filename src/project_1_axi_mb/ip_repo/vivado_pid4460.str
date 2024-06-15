@@ -1,0 +1,106 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 4460
+License: Customer
+
+Current time: 	Sat Jun 15 13:53:59 CEST 2024
+Time zone: 	Central European Standard Time (Europe/Belgrade)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 2
+Available disk space: 346 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/xlinx/Vivado/2019.1/tps/win64/jre9.0.4
+Java executable location: 	D:/xlinx/Vivado/2019.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	janek
+User home directory: C:/Users/janek
+User working directory: C:/Users/Public/Documents/JRPROJECT/FPGA_taylor_aproximation/src/project_1_axi_mb/ip_repo
+User country: 	PL
+User language: 	pl
+User locale: 	pl_PL
+
+RDI_BASEROOT: D:/xlinx/Vivado
+HDI_APPROOT: D:/xlinx/Vivado/2019.1
+RDI_DATADIR: D:/xlinx/Vivado/2019.1/data
+RDI_BINDIR: D:/xlinx/Vivado/2019.1/bin
+
+Vivado preferences file location: C:/Users/janek/AppData/Roaming/Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: C:/Users/janek/AppData/Roaming/Xilinx/Vivado/2019.1/
+Vivado layouts directory: C:/Users/janek/AppData/Roaming/Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	D:/xlinx/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Public/Documents/JRPROJECT/FPGA_taylor_aproximation/src/project_1_axi_mb/ip_repo/vivado.log
+Vivado journal file location: 	C:/Users/Public/Documents/JRPROJECT/FPGA_taylor_aproximation/src/project_1_axi_mb/ip_repo/vivado.jou
+Engine tmp dir: 	C:/Users/Public/Documents/JRPROJECT/FPGA_taylor_aproximation/src/project_1_axi_mb/ip_repo/.Xil/Vivado-4460-DESKTOP-FK6UC10
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/xlinx/Vivado/2019.1/ids_lite/ISE
+XILINX_DSP: D:/xlinx/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: D:/xlinx/Vivado/2019.1
+XILINX_SDK: D:/xlinx/SDK/2019.1
+XILINX_VIVADO: D:/xlinx/Vivado/2019.1
+XILINX_VIVADO_HLS: D:/xlinx/Vivado/2019.1
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 645 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 85 MB (+86216kb) [00:00:08]
+// [Engine Memory]: 599 MB (+476260kb) [00:00:08]
+// by (cl):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Public\Documents\JRPROJECT\FPGA_taylor_aproximation\src\project_1_axi_mb\ip_repo\edit_taylor_ip_v1_0.xpr. Version: Vivado v2019.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/Public/Documents/JRPROJECT/FPGA_taylor_aproximation/src/project_1_axi_mb/ip_repo/edit_taylor_ip_v1_0.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/Public/Documents/JRPROJECT/FPGA_taylor_aproximation/src/project_1_axi_mb/ip_repo' 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/Public/Documents/JRPROJECT/FPGA_taylor_aproximation/src/project_1_axi_mb/ip_repo/edit_taylor_ip_v1_0.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/Public/Documents/JRPROJECT/FPGA_taylor_aproximation/src/project_1_axi_mb/ip_repo' 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Public/Documents/JRPROJECT/FPGA_taylor_aproximation/src/project_1_axi_mb/ip_repo/taylor_ip_1.0'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 111 MB (+23124kb) [00:00:14]
+// [Engine Memory]: 713 MB (+88853kb) [00:00:14]
+// [Engine Memory]: 754 MB (+5614kb) [00:00:16]
+// WARNING: HEventQueue.dispatchEvent() is taking  3905 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xlinx/Vivado/2019.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 767 MB. GUI used memory: 53 MB. Current time: 6/15/24, 1:54:05 PM CEST
