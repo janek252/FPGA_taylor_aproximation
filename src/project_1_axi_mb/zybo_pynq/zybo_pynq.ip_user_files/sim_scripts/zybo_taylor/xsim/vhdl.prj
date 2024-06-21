@@ -1,0 +1,6 @@
+vhdl xil_defaultlib  \
+"../../../bd/zybo_taylor/ip/zybo_taylor_axi_dma_0_0/sim/zybo_taylor_axi_dma_0_0.vhd" \
+"../../../bd/zybo_taylor/ip/zybo_taylor_rst_ps7_0_50M_0/sim/zybo_taylor_rst_ps7_0_50M_0.vhd" \
+
+# Do not sort compile order
+nosort

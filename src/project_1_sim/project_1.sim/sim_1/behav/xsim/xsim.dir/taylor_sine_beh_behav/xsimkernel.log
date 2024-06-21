@@ -1,0 +1,4 @@
+Running: xsim.dir/taylor_sine_beh_behav/xsimk.exe -simmode gui -wdb taylor_sine_beh_behav.wdb -simrunnum 0 -socket 54799
+Design successfully loaded
+Design Loading Memory Usage: 8772 KB (Peak: 8772 KB)
+Design Loading CPU Usage: 15 ms

@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wikto/studia/magisterka/isem/SDUP/projekt/FPGA_taylor_aproximation/src/project_1_sim/project_1.srcs/sim_1/new/cordic_rtl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module taylor_sine
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/wikto/studia/magisterka/isem/SDUP/projekt/FPGA_taylor_aproximation/src/project_1_sim/project_1.srcs/sim_1/new/cordic_beh2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module taylor_sine_beh
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wikto/studia/magisterka/isem/SDUP/projekt/FPGA_taylor_aproximation/src/project_1_sim/project_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
