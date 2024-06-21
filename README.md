@@ -8,7 +8,7 @@ SDUP project for TAYLOR aproximation on FPGA
 * **Jan Rudecki**
 
 
-# Strktura projekt:
+# Strktura projektu:
 * **project_1_sim** - projekt z plikami symulacyjnymi.
 * **project_1_axi_mb** - zawiera projekt z implementacją hardware.
 
