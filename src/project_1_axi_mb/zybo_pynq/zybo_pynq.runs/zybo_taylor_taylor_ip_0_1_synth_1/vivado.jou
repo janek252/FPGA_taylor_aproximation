@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:53:51 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Thu Jun 20 17:30:20 2024
+# Process ID: 34588
+# Current directory: C:/Users/wikto/studia/zybo_pynq/zybo_pynq.runs/zybo_taylor_taylor_ip_0_1_synth_1
+# Command line: vivado.exe -log zybo_taylor_taylor_ip_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source zybo_taylor_taylor_ip_0_1.tcl
+# Log file: C:/Users/wikto/studia/zybo_pynq/zybo_pynq.runs/zybo_taylor_taylor_ip_0_1_synth_1/zybo_taylor_taylor_ip_0_1.vds
+# Journal file: C:/Users/wikto/studia/zybo_pynq/zybo_pynq.runs/zybo_taylor_taylor_ip_0_1_synth_1\vivado.jou
+# Running On: Imuposibru, OS: Windows, CPU Frequency: 2400 MHz, CPU Physical cores: 4, Host memory: 34266 MB
+#-----------------------------------------------------------
+source zybo_taylor_taylor_ip_0_1.tcl -notrace
