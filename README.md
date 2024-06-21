@@ -1,17 +1,18 @@
 # FPGA_taylor_aproximation
 SDUP project for TAYLOR aproximation on FPGA
 
-
-Opis algorytmu.
-
 # Systemy Dedykowane W Układach Programowalnych
 
 ## Autorzy
 * **Wiktor Pantak**
 * **Jan Rudecki**
 
-## Wstęp
 
+# Strktura projekt:
+* **project_1_sim** - projekt z plikami symulacyjnymi.
+* **project_1_axi_mb** - zawiera projekt z implementacją hardware.
+
+## Wstęp
 Celem projektu było zaimplementowanie **szeregu Taylora** dla funkcji Sinus na FPGA **Zybo Zynq-7000 ARM/FPGA SoC Trainer Board**. Wykorzystywanym oprogramowaniem było Vivado 2023.2.2 oraz środowisko Pynq przystosowane na wykorzystywaną płytkę.
 
 ## Płytka Zynq-7000 ARM/FPGA SoC Trainer Board
@@ -69,12 +70,3 @@ W celu umożliwienia wykorzystania rejestrów w bloku `taylor_ip_v1.2` konieczne
 Prezentacja layoutu implementacji bramek:
 
 ![ph_8](photos/ph_8.png)
-
-## Implementacja w środowisku PYNQ
-
-Import bibliotek:
-
-```python
-import numpy as np
-import matplotlib.pyplot as plt
-import os
