@@ -1,0 +1,16 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2.2 (win64) Build 4126759 Thu Feb  8 23:53:51 MST 2024
+| Date         : Thu Jun 20 17:29:30 2024
+| Host         : Imuposibru running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'zybo_taylor_taylor_ip_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of zybo_taylor_taylor_ip_0_1 (xilinx.com:user:taylor_ip:1.2) from (Rev. 3) to (Rev. 4)
+

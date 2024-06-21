@@ -1,0 +1,315 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:53:51 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Thu Jun 20 17:30:20 2024
+# Process ID: 34588
+# Current directory: C:/Users/wikto/studia/zybo_pynq/zybo_pynq.runs/zybo_taylor_taylor_ip_0_1_synth_1
+# Command line: vivado.exe -log zybo_taylor_taylor_ip_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source zybo_taylor_taylor_ip_0_1.tcl
+# Log file: C:/Users/wikto/studia/zybo_pynq/zybo_pynq.runs/zybo_taylor_taylor_ip_0_1_synth_1/zybo_taylor_taylor_ip_0_1.vds
+# Journal file: C:/Users/wikto/studia/zybo_pynq/zybo_pynq.runs/zybo_taylor_taylor_ip_0_1_synth_1\vivado.jou
+# Running On: Imuposibru, OS: Windows, CPU Frequency: 2400 MHz, CPU Physical cores: 4, Host memory: 34266 MB
+#-----------------------------------------------------------
+source zybo_taylor_taylor_ip_0_1.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 594.344 ; gain = 218.297
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/wikto/studia/ip_repo/taylor_ip_1_2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/wikto/studia/ip_repo/taylor_ip_1_1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/wikto/studia/ip_repo/taylor_ip_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: zybo_taylor_taylor_ip_0_1
+Command: synth_design -top zybo_taylor_taylor_ip_0_1 -part xc7z010clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 18948
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1437.527 ; gain = 439.438
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'zybo_taylor_taylor_ip_0_1' [c:/Users/wikto/studia/zybo_pynq/zybo_pynq.gen/sources_1/bd/zybo_taylor/ip/zybo_taylor_taylor_ip_0_1/synth/zybo_taylor_taylor_ip_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'taylor_ip_v1_2' [c:/Users/wikto/studia/zybo_pynq/zybo_pynq.gen/sources_1/bd/zybo_taylor/ipshared/4a65/hdl/taylor_ip_v1_2.v:4]
+INFO: [Synth 8-6157] synthesizing module 'taylor_ip_v1_2_S00_AXI' [c:/Users/wikto/studia/zybo_pynq/zybo_pynq.gen/sources_1/bd/zybo_taylor/ipshared/4a65/hdl/taylor_ip_v1_2_S00_AXI.v:4]
+INFO: [Synth 8-226] default block is never used [c:/Users/wikto/studia/zybo_pynq/zybo_pynq.gen/sources_1/bd/zybo_taylor/ipshared/4a65/hdl/taylor_ip_v1_2_S00_AXI.v:231]
+INFO: [Synth 8-226] default block is never used [c:/Users/wikto/studia/zybo_pynq/zybo_pynq.gen/sources_1/bd/zybo_taylor/ipshared/4a65/hdl/taylor_ip_v1_2_S00_AXI.v:372]
+INFO: [Synth 8-6157] synthesizing module 'taylor_sine' [c:/Users/wikto/studia/zybo_pynq/zybo_pynq.gen/sources_1/bd/zybo_taylor/ipshared/4a65/hdl/taylor_sine.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/wikto/studia/zybo_pynq/zybo_pynq.gen/sources_1/bd/zybo_taylor/ipshared/4a65/hdl/taylor_sine.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'taylor_sine' (0#1) [c:/Users/wikto/studia/zybo_pynq/zybo_pynq.gen/sources_1/bd/zybo_taylor/ipshared/4a65/hdl/taylor_sine.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'taylor_ip_v1_2_S00_AXI' (0#1) [c:/Users/wikto/studia/zybo_pynq/zybo_pynq.gen/sources_1/bd/zybo_taylor/ipshared/4a65/hdl/taylor_ip_v1_2_S00_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'taylor_ip_v1_2' (0#1) [c:/Users/wikto/studia/zybo_pynq/zybo_pynq.gen/sources_1/bd/zybo_taylor/ipshared/4a65/hdl/taylor_ip_v1_2.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'zybo_taylor_taylor_ip_0_1' (0#1) [c:/Users/wikto/studia/zybo_pynq/zybo_pynq.gen/sources_1/bd/zybo_taylor/ip/zybo_taylor_taylor_ip_0_1/synth/zybo_taylor_taylor_ip_0_1.v:53]
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module taylor_ip_v1_2_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module taylor_ip_v1_2_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module taylor_ip_v1_2_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module taylor_ip_v1_2_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module taylor_ip_v1_2_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module taylor_ip_v1_2_S00_AXI is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1553.961 ; gain = 555.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1553.961 ; gain = 555.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1553.961 ; gain = 555.871
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1553.961 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1642.258 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1642.258 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:21 . Memory (MB): peak = 1642.258 ; gain = 644.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:21 . Memory (MB): peak = 1642.258 ; gain = 644.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:21 . Memory (MB): peak = 1642.258 ; gain = 644.168
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'taylor_sine'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      S1 |                     000000000001 |                             0001
+                      S2 |                     000000000010 |                             0010
+                      S3 |                     000000000100 |                             0011
+                      S4 |                     000000001000 |                             0100
+                      S5 |                     000000010000 |                             0101
+                      S6 |                     000000100000 |                             0110
+                      S7 |                     000001000000 |                             0111
+                     S10 |                     000010000000 |                             1010
+                      S9 |                     000100000000 |                             1001
+                     S11 |                     001000000000 |                             1011
+                     S12 |                     010000000000 |                             1100
+                      S8 |                     100000000000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'taylor_sine'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:22 . Memory (MB): peak = 1642.258 ; gain = 644.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   12 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               24 Bit    Registers := 1     
+	               12 Bit    Registers := 7     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 2     
+	   4 Input   32 Bit        Muxes := 3     
+	  12 Input   24 Bit        Muxes := 1     
+	   6 Input   12 Bit        Muxes := 1     
+	  12 Input   12 Bit        Muxes := 4     
+	   2 Input   12 Bit        Muxes := 4     
+	  12 Input    3 Bit        Muxes := 1     
+	  12 Input    1 Bit        Muxes := 7     
+	   2 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/taylor_ip_v1_2_S00_AXI_inst/taylor_sine_inst/x_tmp_mul_reg' and it is trimmed from '24' to '22' bits. [c:/Users/wikto/studia/zybo_pynq/zybo_pynq.gen/sources_1/bd/zybo_taylor/ipshared/4a65/hdl/taylor_sine.v:94]
+DSP Report: Generating DSP inst/taylor_ip_v1_2_S00_AXI_inst/taylor_sine_inst/n_x_2_mul0, operation Mode is: A2*B2.
+DSP Report: register inst/taylor_ip_v1_2_S00_AXI_inst/taylor_sine_inst/x_base_reg is absorbed into DSP inst/taylor_ip_v1_2_S00_AXI_inst/taylor_sine_inst/n_x_2_mul0.
+DSP Report: register inst/taylor_ip_v1_2_S00_AXI_inst/taylor_sine_inst/x_base_reg is absorbed into DSP inst/taylor_ip_v1_2_S00_AXI_inst/taylor_sine_inst/n_x_2_mul0.
+DSP Report: operator inst/taylor_ip_v1_2_S00_AXI_inst/taylor_sine_inst/n_x_2_mul0 is absorbed into DSP inst/taylor_ip_v1_2_S00_AXI_inst/taylor_sine_inst/n_x_2_mul0.
+DSP Report: Generating DSP inst/taylor_ip_v1_2_S00_AXI_inst/taylor_sine_inst/x_tmp_mul_reg, operation Mode is: (A*B)'.
+DSP Report: register inst/taylor_ip_v1_2_S00_AXI_inst/taylor_sine_inst/x_tmp_mul_reg is absorbed into DSP inst/taylor_ip_v1_2_S00_AXI_inst/taylor_sine_inst/x_tmp_mul_reg.
+DSP Report: operator x_tmp_mul0 is absorbed into DSP inst/taylor_ip_v1_2_S00_AXI_inst/taylor_sine_inst/x_tmp_mul_reg.
+WARNING: [Synth 8-7129] Port s00_axi_awprot[2] in module zybo_taylor_taylor_ip_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_awprot[1] in module zybo_taylor_taylor_ip_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_awprot[0] in module zybo_taylor_taylor_ip_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[2] in module zybo_taylor_taylor_ip_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[1] in module zybo_taylor_taylor_ip_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[0] in module zybo_taylor_taylor_ip_0_1 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:25 . Memory (MB): peak = 1642.258 ; gain = 644.168
+---------------------------------------------------------------------------------
+ Sort Area is  inst/taylor_ip_v1_2_S00_AXI_inst/taylor_sine_inst/n_x_2_mul0_0 : 0 0 : 1076 1076 : Used 1 time 0
+ Sort Area is  inst/taylor_ip_v1_2_S00_AXI_inst/taylor_sine_inst/x_tmp_mul_reg_2 : 0 0 : 1074 1074 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|taylor_sine | A2*B2       | 12     | 12     | -      | -      | 24     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|taylor_sine | (A*B)'      | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 1    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:35 . Memory (MB): peak = 1642.258 ; gain = 644.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:35 . Memory (MB): peak = 1642.258 ; gain = 644.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:36 . Memory (MB): peak = 1642.258 ; gain = 644.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:42 . Memory (MB): peak = 1642.258 ; gain = 644.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:42 . Memory (MB): peak = 1642.258 ; gain = 644.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:42 . Memory (MB): peak = 1642.258 ; gain = 644.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:42 . Memory (MB): peak = 1642.258 ; gain = 644.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:42 . Memory (MB): peak = 1642.258 ; gain = 644.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:42 . Memory (MB): peak = 1642.258 ; gain = 644.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|taylor_sine | A'*B'       | 30     | 18     | -      | -      | 24     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|taylor_sine | ((A*B)')'   | 30     | 18     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 1    | 1    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |     3|
+|2     |DSP48E1 |     2|
+|4     |LUT1    |     1|
+|5     |LUT2    |    22|
+|6     |LUT3    |    10|
+|7     |LUT4    |    68|
+|8     |LUT5    |    26|
+|9     |LUT6    |    11|
+|10    |FDRE    |   194|
+|11    |FDSE    |     2|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:42 . Memory (MB): peak = 1642.258 ; gain = 644.168
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:40 . Memory (MB): peak = 1642.258 ; gain = 555.871
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:43 . Memory (MB): peak = 1642.258 ; gain = 644.168
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1642.258 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1642.258 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 9078c635
+INFO: [Common 17-83] Releasing license: Synthesis
+35 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:50 . Memory (MB): peak = 1642.258 ; gain = 1033.840
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1642.258 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/wikto/studia/zybo_pynq/zybo_pynq.runs/zybo_taylor_taylor_ip_0_1_synth_1/zybo_taylor_taylor_ip_0_1.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP zybo_taylor_taylor_ip_0_1, cache-ID = ca3b96deea3ea1b8
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1642.258 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/wikto/studia/zybo_pynq/zybo_pynq.runs/zybo_taylor_taylor_ip_0_1_synth_1/zybo_taylor_taylor_ip_0_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file zybo_taylor_taylor_ip_0_1_utilization_synth.rpt -pb zybo_taylor_taylor_ip_0_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 20 17:31:27 2024...

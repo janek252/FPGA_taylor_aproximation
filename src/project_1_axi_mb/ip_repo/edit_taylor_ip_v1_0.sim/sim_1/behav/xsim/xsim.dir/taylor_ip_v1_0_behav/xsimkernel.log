@@ -1,7 +1,0 @@
-Running: xsim.dir/taylor_ip_v1_0_behav/xsimk.exe -simmode gui -wdb taylor_ip_v1_0_behav.wdb -simrunnum 0 -socket 61509
-Design successfully loaded
-Design Loading Memory Usage: 5596 KB (Peak: 5596 KB)
-Design Loading CPU Usage: 0 ms
-Simulation completed
-Simulation Memory Usage: 6264 KB (Peak: 6264 KB)
-Simulation CPU Usage: 15 ms
