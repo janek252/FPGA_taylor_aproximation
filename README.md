@@ -70,3 +70,5 @@ W celu umożliwienia wykorzystania rejestrów w bloku `taylor_ip_v1.2` konieczne
 Prezentacja layoutu implementacji bramek:
 
 ![ph_8](photos/ph_8.png)
+
+# Implementacja PYNQ jupiter notebook znajduje się w folderze pynq
